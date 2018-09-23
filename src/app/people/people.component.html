@@ -1,3 +1,22 @@
-<p>
+<h1>
   people works!
-</p>
+</h1>
+
+<div>
+
+  
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <td>Names</td>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>{{people.count}}</tr>
+      <tr *ngFor ="let d of people.results;">
+        <td>{{d.name}}</td>
+      </tr>
+    </tbody>
+  </table>

@@ -10,6 +10,8 @@ import { VehiclesComponent } from './vehicles/vehicles.component';
 import { StarShipsComponent } from './star-ships/star-ships.component';
 
 import {AppRoutingModule} from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -23,9 +25,12 @@ import {AppRoutingModule} from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    HttpModule
+
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
