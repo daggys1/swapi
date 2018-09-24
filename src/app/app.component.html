@@ -1,12 +1,24 @@
 
 
+<nav class="navbar">
+  <!-- logo -->
+  <div class="navbar-brand">
+    <a>
+      <img class="logo" src="assets/img/logo.jpg">
+    </a>
+  </div>
+</nav>
 
-<a [routerLink]="'/people'"> People </a><br>
-<a [routerLink]="'/planets'"> Planets </a><br>
-<a [routerLink]="'/films'"> Films </a><br>
-<a [routerLink]="'/species'"> Species </a><br>
-<a [routerLink]="'/vehicles'"> Vehicles </a><br>
-<a [routerLink]="'/starships'"> StarShips </a><br>
+<div>
+
+  <a class="nav-hori left-align" [routerLink]="'/people'"> People </a>
+  <a class="nav-hori" [routerLink]="'/planets'"> Planets </a>
+  <a class="nav-hori" [routerLink]="'/films'"> Films </a>
+  <a class="nav-hori" [routerLink]="'/species'"> Species </a>
+  <a class="nav-hori" [routerLink]="'/vehicles'"> Vehicles </a>
+  <a class="nav-hori" [routerLink]="'/starships'"> StarShips </a>
+</div>
+
 <div>
   <router-outlet></router-outlet>
 </div>
