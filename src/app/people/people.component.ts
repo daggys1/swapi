@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ServicesService } from '../services.service'
+import {Component, OnInit} from '@angular/core';
+import {ServicesService} from '../services.service'
 
 @Component({
   selector: 'app-people',
@@ -8,15 +8,28 @@ import { ServicesService } from '../services.service'
 })
 export class PeopleComponent implements OnInit {
 
-  constructor(private service :ServicesService ) { }
-  public  people: any;
+  constructor(private service: ServicesService) {
+  }
+
+  public people: any;
+
   ngOnInit() {
     this.getPeople();
   }
-  public getPeople(){
-    this.service.getPeople().subscribe((data:  any) => {
+
+  public getPeople() {
+    this.service.getPlanets().subscribe((data: any) => {
       this.people = data;
-        console.log(data);
+      console.log(data);
     });
-}
+  }
+
+
+
+
+
+
+
+
+
 }

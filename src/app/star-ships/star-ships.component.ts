@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ServicesService} from '../services.service'
 
 @Component({
   selector: 'app-star-ships',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StarShipsComponent implements OnInit {
 
-  constructor() { }
+
+  public starShips: any;
+
+  constructor(private service: ServicesService) { }
 
   ngOnInit() {
+    this.getStarShips();
   }
 
+
+  public getStarShips() {
+    return this.service.getStarShips().subscribe((data: any) => {
+      this.starShips = data;
+    });
+  }
 }

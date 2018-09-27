@@ -15,4 +15,24 @@ export class ServicesService {
     console.log(environment.SWAPI_PEOPLE);
     return  this.httpClient.get(environment.SWAPI_PEOPLE);
   }
+
+  getPlanets(){
+    return this.httpClient.get(environment.SWAPI_PLANETS);
+  }
+
+  getFilms(){
+    return this.httpClient.get(environment.SWAPI_FILMS);
+  }
+
+  getSpecies(){
+    return this.httpClient.get(environment.SWAPI_SPECIES);
+  }
+
+  getVehicles(){
+    return this.httpClient.get(environment.SWAPI_VEHICLES);
+  }
+
+  getStarShips(){
+    return this.httpClient.get(environment.SWAPI_STARSHIPS);
+  }
 }

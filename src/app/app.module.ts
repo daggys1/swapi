@@ -11,7 +11,6 @@ import { StarShipsComponent } from './star-ships/star-ships.component';
 
 import {AppRoutingModule} from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -26,8 +25,7 @@ import { HttpModule } from '@angular/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    HttpModule
+    HttpClientModule
 
   ],
   providers: [HttpClientModule],

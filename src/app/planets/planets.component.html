@@ -1,3 +1,37 @@
 <p>
   planets works!
 </p>
+<table>
+  <thead>
+  <tr>
+    <td>Name</td>
+    <td>Rotation_Period</td>
+    <td>Orbital_period</td>
+    <td>Diameter</td>
+    <td>Climate</td>
+    <td>Gravity</td>
+    <td>Terrain</td>
+    <td>Surface_water</td>
+    <td>Population</td>
+    <td>Residents</td>
+    <td>Films</td>
+  </tr>
+  </thead>
+
+
+  <tbody>
+  <tr *ngFor ="let d of planets.results;">
+    <td>{{d.name}}</td>
+    <td>{{d.rotation_period}}</td>
+    <td>{{d.orbital_period}}</td>
+    <td>{{d.diameter}}</td>
+    <td>{{d.climate}}</td>
+    <td>{{d.gravity}}</td>
+    <td>{{d.terrain}}</td>
+    <td>{{d.surface_water}}</td>
+    <td>{{d.population}}</td>
+    <td>{{d.residents[0]}}</td>
+    <td>{{d.films[0]}}</td>
+  </tr>
+  </tbody>
+</table>
