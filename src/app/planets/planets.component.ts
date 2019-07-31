@@ -19,7 +19,7 @@ export class PlanetsComponent implements OnInit {
 
 
   public getPlanets() {
-    this.service.planets().subscribe((data: any) => {
+    this.service.getPlanets().subscribe((data: any) => {
       this.planets = data;
       console.log(data);
     });
